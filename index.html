@@ -2,13 +2,14 @@
   <html lang="en-us">
     <head>
       <meta charset="en-us">
-      <title>Password Generator </title>
+      <title>Password Generator</title>
       
       <!-- Add Bootstrap CDN Here -->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
        
       <!-- Add Google fonts -->
       <link href="https://fonts.googleapis.com/css2?family=Notable&family=Solway&display=swap" rel="stylesheet">
+
       <!-- Add CSS stylesheet here -->
       <link rel="stylesheet" href="./assets/css/style.css">
     
@@ -18,6 +19,7 @@
     <body>
         <main>
             <h1>World's Greatest Password Generator</h1>
+            
             <section id="bigbox">
                 <h2>Lock down your world with a customized password.</h2>
                 <p>After clicking the button, answer some simple questions to specify the kind of password you'd like. Then -- presto! -- you'll have a custom-made password, randomly chosen to your specifications. Copy and paste to your favorite application.</p>
@@ -29,107 +31,63 @@
             </section>
         </main>
     
-    <!-- Bootstrap sticky footer begins here. Uses code from StartBootstrap at https://startbootstrap.com/snippets/sticky-footer-flexbox/ -->
-    <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
-    <!-- following updates copyright year automatically -->
-      <div class="container text-center">
-        <small>Copyright &copy 2019-<script>document.write(new Date().getFullYear())</script> by Douglass Davidoff</small>
-      </div>
-    </footer>
-  </div>
+        <!-- Bootstrap sticky footer begins here. Uses code from StartBootstrap at https://startbootstrap.com/snippets/sticky-footer-flexbox/ -->
+        <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+        <!-- following updates copyright year automatically -->
+        <div class="container text-center">
+            <small>Copyright &copy 2019-<script>document.write(new Date().getFullYear())</script> by Douglass Davidoff</small>
+        </div>
+        </footer>
+  
+        <script>
 
-  <script>
+            // on.click here
 
-      var product = "";
+            var product = "sample";
+            var lowers = "abcdefghijklmnopqrstuvwxyz";
+            var uppers = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            var digits = "0123456789";
+            var specials = "!#$%&()*+,-./:;<=>?@[\]^_`{|}~"
 
-      var lowers = "abcdefghijklmnopqrstuvwxyz";
+            var length = prompt("How many characters would you like in your password? Choose a number between 8 and 128.");
 
-      var uppers = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            var lowerCase = confirm("Do you want lower-case letters in your password?");
 
-      var numbers = "0123456789";
+            var upperCase = confirm("Do you want upper-case letters in your password?");
 
-      var specials = "!#$%&()*+,-./:;<=>?@[\]^_`{|}~"
+            var numerics = confirm("Do you want numbers in your password?");
 
-      // var length = prompt("How many characters would you like in your password? Choose a number between 8 and 128.");
-
-        // var lowerCase = confirm("Do you want lower-case letters in your password?");
+            var specialCharacters = confirm("Do you want special characters in your password?");
         
-        // var upperCase = confirm("Do you want upper-case letters in your password?");
+            // var types = [lowCase, upCase, num, spec]
 
-        // var numerics = confirm("Do you want numbers in your password?");
+            // var types=[lowerCase, upperCase, numerics, specialCharacters];
 
-        // var specialCharacters = confirm("Do you want special characters in your password?")
+            // for i = 0; i < length; i++;
 
-        // var types=[lowerCase, upperCase, numerics, specialCharacters];
+            // pickTry = Math.floor((Math.random() * 4));
 
-        // pickTry = 
+            // if pickTry = true; randomly select pickCharacter from PickTry's array
+                
+            // else, try again
 
+            // attach pickCharacter to product
 
+            // try again
 
-//     function makeid(length) {
-//     var product           = '';
-//     var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-//     var charactersLength = characters.length;
-//     for ( var i = 0; i < length; i++ ) {
-//       product += characters.charAt(Math.floor(Math.random() * charactersLength));
-//    }
-//     return result;
-}
+            // end for loop
 
-    console.log(makeid(5)); 
+            // display product
+            document.getElementById("product").innerHTML = "Your password is " + product;
 
+            Alert("Thank you for choosing us today!");
 
+        </script>
 
-
-    // //   Object --> arrays
-
-    // var choices = {
-    //     lower : 'abcdefg',
-    //     upper: 'HIJKLMNOP',
-    //     numerics: '0123456789',
-    //     special: '!@#$%^&*()'
-    // }
- 
-    // var product = ""
-
-    // var pwlength = prompt("Choose your password's length, from 8 to 128 characters");
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     
-    // //   Confirm lower
-    //   confirm upper
-    //   confirm numerics
-    //   confirm Special;
+    </body>
 
-    // listener on.click
-
-//     // For i = 0 to length {
-
-//         we randomly pick an array from trues
-//         randomly pick a value inside the winner;
-        
-        
-//         // Random picks
-
-//         // Attach to product - contactenate or join or + = 
-
-//     }
-     
-//         // Display the product
-
-//         // Alert: Thank you for choosing us today!
-
-// END
-
-
-
-
-</script>
-
-
-
-
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-</body>
 </html>
