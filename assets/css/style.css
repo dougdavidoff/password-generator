@@ -1,8 +1,38 @@
 main {
-    height: 1200px;
-    background-image: url("../images/locks.jpg");
+    background-image: url("../images/rsz_locks.jpg");
+    width: 100vw;
+    height: auto;
 }
 
 h1 {
     font-family: 'Notable', sans-serif;
+    text-align: center;
+    font-size: 50px;
+    padding: 50px;
+    background-color: pink;
+}
+
+#bigbox {
+    margin: auto;
+    height: 500px;
+    width: 900px;
+    color: whitesmoke;
+    border: 5px solid red;
+    background-color: thistle;
+}
+
+h2 {
+    font-family: 'Solway', serif;
+    text-align: left;
+    padding: 10px;
+}
+
+#user-button {
+    margin: 15px 250px 15px 250px;
+    padding: 15px 100px 15px 100px;
+}
+
+#text-field {
+    margin: 15px 250px 15px 250px;
+    padding: 15px 100px 15px 100px;
 }
