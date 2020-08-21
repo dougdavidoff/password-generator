@@ -17,7 +17,15 @@ document.getElementById("generatePass").addEventListener("click", passGenerate);
 function passGenerate() {
     // Input creates the length variable and logs it
     var passLength = prompt("How long should your password be? Enter a number between 8 and 128 to choose the number of characters your password should contain:");
-    console.log("User wants the password to be " + passLength + " characters long");
+    if (passLength < 8 || passLength > 128) {
+        alert("Try again. Your chosen length did not meet the stated criteria")
+        var passLength = prompt("Second chance! How long should your password be? Enter a number between 8 and 128 to choose the number of characters your password should contain:");
+    }
+    else {
+        console.log("User wants the password to be " + passLength + " characters long");
+
+    }
+
     // Asks user what characters they want to use
     var input = confirm("Would you like to use lower-case letters? Click 'OK' for 'yes;' 'Cancel' for 'no.'");
     if (input == true) {
@@ -40,6 +48,15 @@ function passGenerate() {
         console.log("User wants to use special symbols. The characters to be used are: " + preGen);
     }
 
+    console.log("Current character set is " + preGen);
+
+    if (preGen.length < 5) {
+        console.log("No character sets were chosen.")
+        alert("You did not select any of the four character sets presented to you. We will proceed to process a password based only on special characters.");
+        preGen += charSpec;
+        console.log("Current character set is" + preGen);
+    }
+
     // Asks user if what they chose is correct and makes sure a character type was chosen
     
 
@@ -55,6 +72,8 @@ function passGenerate() {
         } 
     
     console.log("The finished password is " + securePW);
+
+    alert("Your completed " + passLength + "-character password is " + securePW);
 
     var password = securePW;
     var passwordText = document.querySelector("#password");
