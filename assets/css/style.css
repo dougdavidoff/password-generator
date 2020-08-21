@@ -1,38 +1,134 @@
-.wrapper {
-    background-image: url("../images/rsz_locks.jpg");
-    width: 100vw;
-    height: auto;
+/* Body styling */
+body {
+    font-family: sans-serif;
+    background-image: url(../images/rsz_locks.jpg);
 }
 
+/* Sets wrapper for the page */
+.wrapper {
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Controls heading text at the top of the page */
 h1 {
-    font-family: 'Notable', sans-serif;
     text-align: center;
+    font-family: 'Notable', sans-serif;
+    font-weight: 700;
+    padding: 25px;
     font-size: 50px;
-    padding: 50px;
-    color: darkslategray;
+    color: slategray;
     background-color: pink;
 }
 
-.card {
-    margin: auto;
-    height: 500px;
-    width: 900px;
-    color: navy;
-}
-
+/* Controls the Generate a Password heading */
 h2 {
-    font-family: 'Solway', serif;
     text-align: center;
-    padding: 10px;
-    color: navy;
+    font-family: 'Solway', serif;
 }
 
-#user-button {
-    margin: 15px 250px 15px 250px;
-    padding: 15px 100px 15px 100px;
+/* Controls the card element */
+.card {
+    background-color: whitesmoke;
+    border-radius: 5px;
+    border-width: 1px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
+    color: hsl(206, 17%, 28%);
+    font-size: 18px;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 30px 40px;
 }
 
-#password {
-    margin: 15px 250px 15px 250px;
-    padding: 15px 100px 15px 100px;
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* Inserts horizontal line */
+.cardHeader::after {
+    content: " ";
+    display: block;
+    width: 100%;
+    background: #e7e9eb;
+    height: 2px;
+}
+
+/* Maintains height */
+.cardBody {
+    min-height: 100px;
+}
+
+.password {
+    appearance: none;
+    border: none;
+    display: block;
+    width: 100%;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 85px;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 2px dashed #c0c7cf;
+    border-radius: 6px;
+    resize: none;
+    overflow: hidden;
+}
+
+/* Aligns button */
+.cardFooter {
+    text-align:center;
+}
+
+/* Inserts horizontal line */
+.cardFooter::before {
+    content: " ";
+    display: block;
+    width: 100%;
+    background: #e7e9eb;
+    height: 2px;
+
+}
+
+/* Inserts horizontal line */
+.cardFooter::after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+/* Controls Generate Password button */
+button {
+    appearance: button;
+    display: inline-block;
+    text-align: center;
+    background-color: gray;
+    box-sizing: border-box;
+    margin: 0em;
+    padding: 10px 10px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: black;
+    border-image: initial;
+}
+
+.btn { 
+    background-color: red;
+    color: black;
+    padding: 14px 28px;
+    margin: 16px 16px 16px 20px;
+    font-size: 16px;
+    cursor: pointer;  
+    color: white; 
+}
+
+#footer-text {
+    color: pink;
+    text-align: center;
+    background: slategray;
+    width: 25%;
 }
