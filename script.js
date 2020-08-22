@@ -76,6 +76,6 @@ function passGenerate() {
     alert("Your completed " + passLength + "-character password is " + securePW);
 
     var password = securePW;
-    var passwordText = document.querySelector("#password");
+    var passwordText = document.querySelector(".password");
     passwordText.value = securePW;
           }
