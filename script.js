@@ -27,7 +27,7 @@ function passGenerate() {
     if (passLength < 8 || passLength > 128) {
         alert("Try again. Your chosen length did not meet the stated criteria");
         passLength = prompt("Second chance! How long should your password be? Enter a number between 8 and 128 to choose the number of characters your password should contain:");
-    } else if (passLength !== "number") {
+    } else if (typeof passLength !== "number") {
         alert("Try again. You did not enter a number.");
         passLength = prompt("Second chance! How long should your password be? Enter a number between 8 and 128 to choose the number of characters your password should contain:");
     } else {
