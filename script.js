@@ -1,6 +1,6 @@
 // Password variables. "preGen" is the changing string before the password is generated. "securePW" is the secure password after being generated
-preGen = "";
-securePW = "";
+// preGen = "";
+// securePW = "";
 
 // Character sets for user to choose among
 charLower = "abcdefghijklmnopqrstuvwxyz";
@@ -15,21 +15,24 @@ document.getElementById("generatePass").addEventListener("click", passGenerate);
 // Function to generate password
 function passGenerate() {
 
+    preGen = ""
+    securePW = ""
+
+
     // Input creates the length variable
     var passLength = prompt("How long should your password be? Enter a number between 8 and 128 to choose the number of characters your password should contain:");
+    passLength = parseInt(passLength);
+
     //validation
     if (passLength < 8 || passLength > 128) {
-        alert("Try again. Your chosen length did not meet the stated criteria")
-        var passLength = prompt("Second chance! How long should your password be? Enter a number between 8 and 128 to choose the number of characters your password should contain:");
-    }
-    //     // // else if (typeof passLength = string) {
-    //     //     alert("Try again. You did not enter a number.")
-    //     //     var passLength = prompt("Second chance! How long should your password be? Enter a number between 8 and 128 to choose the number of characters your password should contain:");
-    //     // }
-    //     else {
+        alert("Try again. Your chosen length did not meet the stated criteria");
+        passLength = prompt("Second chance! How long should your password be? Enter a number between 8 and 128 to choose the number of characters your password should contain:");
+    } else if (passLength !== "number") {
+        alert("Try again. You did not enter a number.");
+        passLength = prompt("Second chance! How long should your password be? Enter a number between 8 and 128 to choose the number of characters your password should contain:");
+    } else {
         console.log("User wants the password to be " + passLength + " characters long");
-
-    // }
+    }
 
     // Asks user what character sets he or she wants to use
     var input = confirm("Would you like to use lower-case letters? Click 'OK' for 'yes;' 'Cancel' for 'no.'");

@@ -130,7 +130,7 @@ button {
     color: pink;
     text-align: center;
     background: slategray;
-    width: 25%;
+    width: 100%;
 }
 
 @media (min-width: 720px) {
