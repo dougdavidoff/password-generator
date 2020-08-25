@@ -65,15 +65,11 @@ function passGenerate() {
         console.log("Current character set is" + preGen);
     }
 
-    // Asks user if what they chose is correct and makes sure a character type was chosen
-    
-
-    // Password is generated here meeting the criteria
-
-     
     console.log("passLength is " + passLength);
     console.log("preGen is " + preGen);
 
+
+        // Password is generated here meeting the criteria
             for (var i = 0; i < passLength; i++)  { 
             securePW +=  preGen[Math.floor(Math.random() * preGen.length)];
             console.log(securePW); 
@@ -81,6 +77,7 @@ function passGenerate() {
     
     console.log("The finished password is " + securePW);
 
+    // Presenting the product password to the user
     alert("Click here to display your new secure password in the window below.");
 
     var password = securePW;
