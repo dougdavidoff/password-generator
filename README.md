@@ -4,11 +4,10 @@
 
 ### Location and Installation
 Deployed website found here:
-[https://dougdavidoff.github.io/password-generator/](https://dougdavidoff.github.io/password-generator/). The website requires no installation steps from the user. It does require the webpage to be refreshed before each use.
 
-![Image of Deployed Password Generator Website]
+The website requires no installation steps from the user. It does require the webpage to be refreshed before each use.
+
 ![image](https://i.imgur.com/3W4LIZll.jpg)
-<img width="642" alt="Screen Shot 2020-08-31 at 9 45 37 PM" src="https://user-images.githubusercontent.com/10477863/91785398-51ba1d80-ebd3-11ea-88a6-0f7612111b49.png">
 
 ### Purpose of the Project
 This is a utility designed to assist users by generating multi-character passwords using lower-case letters, upper-case letters, numbers, and special characters. The user may copy the finished password and paste the password into another application.
