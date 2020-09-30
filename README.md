@@ -3,7 +3,7 @@
 # Doug Davidoff
 
 ### Location and Installation
-Deployed website found here:
+Deployed website found here: https://dougdavidoff.github.io/password-generator/
 
 The website requires no installation steps from the user. It does require the webpage to be refreshed before each use.
 
